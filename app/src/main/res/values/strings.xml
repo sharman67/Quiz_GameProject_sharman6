@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Login App</string>
+    <string name="EmailField">test@example.com</string>
+    <string name="FirstNameField">first name</string>
+    <string name="FamilyNameField">family name</string>
+    <string name="PasswordField">***********</string>
+    <string name="DOBField">MM/DD/YYYY</string>
+    <string name="EmailLabel">Email Address:</string>
+    <string name="FirstNameLabel">First Name:</string>
+    <string name="FamilyNameLabel">Family Name:</string>
+    <string name="PasswordLabel">Password:</string>
+    <string name="DOBLabel">Date Of Birth</string>
+    <string name="registerHeader">REGISTER</string>
+    <string name="loginHeader">LOGIN</string>
+    <string name="btnRegister">Register</string>
+    <string name="btnLogin">Login</string>
+</resources>
