@@ -29,7 +29,7 @@ public class LoginAcitivty extends AppCompatActivity {
         isAllFieldsChecked = CheckAllFields();
         if (isAllFieldsChecked){
             // if all fields are correct then show message
-            if (isValidEmail(emailIn.getText()) == false){
+            if (!isValidEmail(emailIn.getText())){
                 emailIn.setError("Please Enter valid email address");
             } else {
                 int duration = Toast.LENGTH_SHORT;
@@ -41,7 +41,9 @@ public class LoginAcitivty extends AppCompatActivity {
                     @Override
                     public void run() {
                         /* Create an Intent that will start the Select-Activity. */
-                        Intent mainIntent = new Intent(LoginAcitivty.this, SelectActivity.class);
+                        Intent mainIntent = new Intent(LoginAcitivty.this, QuizActivity.class);
+                        //Pass Email to next activity for storing quiz results
+                        mainIntent.putExtra("Email", emailIn.getText().toString());
                         LoginAcitivty.this.startActivity(mainIntent);
                         LoginAcitivty.this.finish();
                     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login App</string>
+    <string name="app_name">Quiz Game</string>
     <string name="EmailField">test@example.com</string>
     <string name="FirstNameField">first name</string>
     <string name="FamilyNameField">family name</string>
@@ -14,4 +14,6 @@
     <string name="loginHeader">LOGIN</string>
     <string name="btnRegister">Register</string>
     <string name="btnLogin">Login</string>
+    <string name="preference_file_key">com.example.loginproject_sharman6.SHARED_PREF_FILE</string>
+    <string name="savedScores">com.example.loginproject_sharman6.SAVED_SCORES</string>
 </resources>

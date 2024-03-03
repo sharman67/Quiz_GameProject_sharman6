@@ -8,12 +8,12 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int SPLASH_DISPLAY_LENGTH = 2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Introduce delay for splash screen and navigate to Main activity
+        int SPLASH_DISPLAY_LENGTH = 2000;
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {

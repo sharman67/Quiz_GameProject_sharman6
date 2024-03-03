@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_img2">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    android:padding="24dp"
+    tools:context=".QuizActivity">
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Total Questions Placeholder "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_margin="30dp"
+        android:layout_marginTop="84dp"
+        android:text="Question Text"
+        android:textAlignment="center"
+        android:textColor="#C8B61B"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_question" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question">
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A text"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans B text"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans C text"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ans_D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans D text"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="80dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choices_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

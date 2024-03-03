@@ -40,9 +40,9 @@ public class RegisterActivity extends AppCompatActivity {
             //If all fields are correct then show message
             boolean isValidFormat = DateOfBirth.getText().toString().matches("((0[1-9]|1[012])/(0[1-9]|[12][0-9]|3[01])/((19|2[0-9])[0-9]{2}))");
 
-            if (isValidEmail(EmailAdd.getText()) == false){
+            if (!isValidEmail(EmailAdd.getText())){
                 EmailAdd.setError("Please Enter valid email address");
-            } else if (isValidFormat == false) {
+            } else if (!isValidFormat) {
                 DateOfBirth.setError("Please Enter valid date in MM/DD/YYYY format");
             } else {
                 int duration = Toast.LENGTH_SHORT;

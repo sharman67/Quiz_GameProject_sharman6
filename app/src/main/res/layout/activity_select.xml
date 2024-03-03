@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SelectActivity"
-    android:background="@color/appBackground">
+    android:background="@drawable/background_img2">
 
     <Button
         android:id="@+id/Login"
